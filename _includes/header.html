@@ -1,0 +1,8 @@
+<header>
+	{% if page.title  %}
+		<h1 class="page-heading">{{ page.title }}</h1>
+	{% else %}
+		<h1>{{ site.title | escape }}</h1>
+		<div class="subtitle">By {{site.author.name}}</div>
+	{% endif %}
+</header>

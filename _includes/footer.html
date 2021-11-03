@@ -1,0 +1,13 @@
+{% if page.title  %}
+<div class="section">
+  <div class="subtitle" style="text-align: center;"><a href="{{ "/" | relative_url }}">Home</a></div>
+</div>
+{% endif %}
+
+<footer>
+  <div class="section">
+    {% include breadcrumbs.html %}
+    <div class="copyright">© {{ site.time | date: '%Y' }} Dane Holmes</div>
+  </div>
+  </div>
+</footer>

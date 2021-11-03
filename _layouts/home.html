@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="section">
+	{{ content }}
+</div>
+
+<div class="section">
+	{% if site.paginate %}
+	{% assign chapters = paginator.chapters %}
+	{% else %}
+	{% assign chapters = site.chapters | sort: 'chapter' %}
+	{% endif %}
+
+	<h2>Book One</h2>
+	{%- if chapters.size > 0 -%}
+
+	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	{%- for chapter in chapters -%}
+	<div class="page-thumbnail-link">
+		<a href="{{ chapter.url | relative_url }}">
+			<div class="page-flex">
+				<div class="page-thumbnail">
+					<div class="scaled-container">
+						<div class="title">{{ chapter.title | escape }}</div>
+						<div class="preview-content">{{ chapter.content }}</div>
+					</div>
+				</div>
+				<div class="page-info">
+					<h3>{{ chapter.title | escape }}</h3>
+					<div class="subtitle">Chapter {{ chapter.chapter | escape }}</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	{%- endfor -%}
+	{%- endif -%}
+</div>
