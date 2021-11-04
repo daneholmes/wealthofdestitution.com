@@ -1,49 +1,45 @@
 {% if page.title  %}
-<div class="section" style="text-align: center;">
-  {% capture the_collection %}{{page.collection}}{% endcapture %}
-  {% if page.collection %}
-  {% assign  document = site[the_collection] | sort: "chapter" %}
-  {% endif %}
+	<div class="section" style="text-align: center;">
+		{% capture the_collection %}{{page.collection}}{% endcapture %}
 
-  {% for links in document %}
-  {% if links.title == page.title %}
+		{% if page.collection %}
+			{% assign  document = site[the_collection] | sort: "chapter" %}
+		{% endif %}
 
-  {% unless forloop.first %}
-  {% assign prevurl = prev.url %}
+		{% for links in document %}
+	    	{% if links.title == page.title %}
 
-  {% assign prevtitle = prev.title %}
-  {% endunless %}
+				{% unless forloop.first %}
+			    	{% assign prevurl = prev.url %}
+					{% assign prevtitle = prev.title %}
+				{% endunless %}
 
-  {% unless forloop.last %}
-  {% assign next = document[forloop.index] %}
+				{% unless forloop.last %}
+			    	{% assign next = document[forloop.index] %}
+					{% assign nexturl = next.url %}
+					{% assign nexttitle = next.title %}
+				 {% endunless %}
+			{% endif %}
 
-  {% assign nexturl = next.url %}
+			{% assign prev = links %}
 
-  {% assign nexttitle = next.title %}
-  {% endunless %}
-  {% endif %}
+		{% endfor %}
 
-  {% assign prev = links %}
-  {% endfor %}
-
-  {% if prevurl or nexturl %}
-  <div class="subtitle">
-    {% if prevurl %}<a href="{{prevurl}}" class="prev">Pervious Chapter</a> / {% endif %}
-    {% if nexturl %}<a href="{{nexturl}}" class="next">Next Chapter</a>{% endif %}
-  </div>
-  <div class="subtitle"><a href="{{ "/" | relative_url }}">Home</a></div>
-  {% endif %}
-
-
-
-
-</div>
+		{% if prevurl or nexturl %}
+			<div class="subtitle">
+				{% if prevurl %}<a href="{{prevurl}}" class="prev">Pervious Chapter</a> / {% endif %}
+				{% if nexturl %}<a href="{{nexturl}}" class="next">Next Chapter</a>{% endif %}
+			</div>
+			<div class="subtitle">
+				<a href="{{ "/" | relative_url }}">Home</a>
+			</div>
+		{% endif %}
+	</div>
 {% endif %}
 
 <footer>
-  <div class="section">
-    {% include breadcrumbs.html %}
-    <div class="copyright">© {{ site.time | date: '%Y' }} Dane Holmes</div>
-  </div>
-  </div>
+	<div class="section">
+		{% include breadcrumbs.html %}
+    	<div class="copyright">© {{ site.time | date: '%Y' }} Dane Holmes</div>
+	</div>
 </footer>
