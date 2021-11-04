@@ -11,10 +11,7 @@ layout: default
 	{% else %}
 	{% assign chapters = site.chapters | sort: 'chapter' %}
 	{% endif %}
-
-	<h2>Book One</h2>
 	{%- if chapters.size > 0 -%}
-
 	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 	{%- for chapter in chapters -%}
 	<div class="page-thumbnail-link">

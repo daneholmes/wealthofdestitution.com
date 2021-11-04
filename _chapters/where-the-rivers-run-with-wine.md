@@ -2,6 +2,7 @@
 layout: chapter
 title: "Where the Rivers Run With Wine"
 chapter: 2
+color: nord
 ---
 Far away and far in the future Leiv sat outside watching the world pass by.
 

@@ -2,6 +2,11 @@
 layout: chapter
 title: "In God's Garden"
 chapter: 1
+color:  dusk
+
+seo:
+  name: In God's Garden
+  type: BlogPosting
 ---
 A train rolled through the prairie, through the grass, and through the moonlight. The land hushed with the wind and droned with cicadas.
 

@@ -6,5 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+redirect_from:
+  - /chapters
 ---
 A work-in-progress novel.
