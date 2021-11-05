@@ -26,16 +26,16 @@ $base-font-family: "Iowan";
 $italic-font-family: "Iowan Italic";
 $bold-font-family: "Iowan Bold";
 $bold-italic-font-family: "Iowan Bold Italic";
-$base-font-size: 14px !default;
-$base-font-weight: 400 !default;
-$base-line-height: 1.5 !default;
-$spacing-unit: 2em !default;
+$base-font-size: 15px;
+$base-font-weight: 400;
+$base-line-height: 1.6;
+$spacing-unit: 18px;
 
 // Width of the content area
-$content-width: 720px !default;
+$content-width: 720px;
 
-$on-palm: 400px !default;
-
-// Import pre-styling-overrides hook and style-partials.
-@import "wealthy/base", // Defines element resets.
-"wealthy/layout"; // Defines structure and style based on CSS selectors.
+// Import pre-styling-overridess hook and style-partials.
+@import "wealthy/base",
+"wealthy/layout",
+"wealthy/page-thumbnail",
+"wealthy/colors";

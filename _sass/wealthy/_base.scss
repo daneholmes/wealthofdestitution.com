@@ -1,26 +1,42 @@
 /**
  * Reset some basic elements
  */
+
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	list-style-type: none;
+  max-width: 100%;
 }
 
 html {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight;
-  color: $dark-grey;
-  background-color: $background-color;
   width: 100vw;
 }
 
+body {
+  background-color: $background-color;
+}
+
+container {
+  display: grid;
+  max-width: $content-width;
+  min-height: 100%;
+  padding: $spacing-unit * 4.2;
+  margin: ($spacing-unit * 1.5) auto ($spacing-unit * 15) auto;
+  background: $container-color;
+  box-shadow: 0 1em 3em #888888;
+}
+
+.section {
+  padding-bottom: 20px;
+}
+
 p {
-  padding-bottom: 0.5em;
-  line-height: 1.75em;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  color: $grey;
+  line-height: $base-line-height;
+  font-size: $base-font-size * 1.4;
+  padding-bottom: $spacing-unit;
 }
 /**
  * Images
@@ -35,28 +51,19 @@ p {
 /**
  * Headings
  */
-h1,
-h2,
-h3 {
-  color: $dark-grey;
-}
 
 h1 {
-  font-size: $base-font-size / 0.5;
+  font-size: $base-font-size * 2.7;
   font-family: $bold-font-family;
   font-weight: 700;
+  color: $grey;
 }
 
 h2 {
-  font-size: $base-font-size / 0.75;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: $base-font-size / 0.8;
+  font-size: $base-font-size * 1.1;
+  font-family: $bold-font-family;
   font-weight: 500;
 }
-
 
 /**
  * Links
@@ -68,5 +75,4 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
-
 }

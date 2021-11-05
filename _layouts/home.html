@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<div class="section">
-	{{ content }}
-</div>
+	<!-- {{ content }} -->
 
 <div class="section">
 	{% if site.paginate %}
@@ -24,7 +22,7 @@ layout: default
 					</div>
 				</div>
 				<div class="page-info">
-					<h3>{{ chapter.title | escape }}</h3>
+					<h2>{{ chapter.title | escape }}</h2>
 					<div class="subtitle">Chapter {{ chapter.chapter | escape }}</div>
 				</div>
 			</div>

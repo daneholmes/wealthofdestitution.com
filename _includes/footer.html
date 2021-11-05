@@ -26,12 +26,9 @@
 		{% endfor %}
 
 		{% if prevurl or nexturl %}
-			<div class="subtitle">
-				{% if prevurl %}<a href="{{prevurl}}" class="prev">Pervious Chapter</a> / {% endif %}
+			<div class="advance">
+				{% if prevurl %}<a href="{{prevurl}}" class="prev">Pervious Chapter</a><span class="dividers"> — </span>{% endif %}
 				{% if nexturl %}<a href="{{nexturl}}" class="next">Next Chapter</a>{% endif %}
-			</div>
-			<div class="subtitle">
-				<a href="{{ "/" | relative_url }}">Home</a>
 			</div>
 		{% endif %}
 	</div>
@@ -39,7 +36,7 @@
 
 <footer>
 	<div class="section">
-		{% include breadcrumbs.html %}
+      {% include breadcrumbs.html %}
     	<div class="copyright">© {{ site.time | date: '%Y' }} Dane Holmes</div>
 	</div>
 </footer>
