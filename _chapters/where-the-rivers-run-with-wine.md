@@ -32,4 +32,5 @@ Bjarni, still watching Leiv pass guessed that this building is where he was head
 
 Leiv walked, and despite his weary steps reached the central hall before his murmured conversation came to an end. Inside and the central fire glowed, heating and hall, without the burden of flames and smoke. At tables scattered a random, a few dozen men sat in conversation. The odd table was aroused in joyous merriment. But most sat in quiet conversation. Leiv took a table near the door and sat alone, still muttering to himself.
 
-later, the night passed by, caught between the unending light of the summer and the encroaching darkness brought on by fall. As the sky struggled, resolving to lilac hues around midnight, Leiv lied motionless in bed, caught between sleep and life. In a stupor, Leiv lay dreaming or thinking—he did not know which—of what he wished would be and was sad. For once a desire felt or wish made, hope of it happening should be slight.
+Later, the night passed by, caught between the unending light of the summer and the encroaching darkness brought on by fall. As the sky struggled, resolving to lilac hues around midnight, Leiv lied motionless in bed, caught between sleep and life. In a stupor, Leiv lay dreaming or thinking—he did not know which—of what he wished would be and was sad. For once a desire felt or wish made, hope of it happening should be slight.
+
