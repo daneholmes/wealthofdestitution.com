@@ -1,1 +1,0 @@
-# The Wealth of Destitution
